@@ -1,0 +1,8 @@
+<h1>Welcome to Word Counter</h1>
+<h3>Input your text below: </h3>
+
+<form method="POST" action="counter">
+    {% csrf_token %}
+    <textarea name="text" cols="100" rows="25"></textarea><br>
+    <input type="submit"/>
+</form>
